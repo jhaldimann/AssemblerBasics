@@ -1,10 +1,10 @@
-all: uppercase
+all: recursion
 
 clean:
 	rm -rf *.o
 
-uppercase: uppercase.o
-	ld -o uppercase uppercase.o
+recursion: recursion.o
+	ld -o recursion recursion.o
 
-uppercase.o: uppercase.asm
-	nasm -f elf64 -g -F dwarf uppercase.asm
+recursion.o: recursion.asm
+	nasm -f elf64 -g -F dwarf recursion.asm
